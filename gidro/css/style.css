@@ -1,0 +1,121 @@
+html {
+    box-sizing: border-box;
+}
+*,*::after,*::before {
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    padding: 0;
+}
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+body {
+    font-size: 20px;
+    line-height: 24px;
+    color: #2F3035;
+}
+.container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.header__top-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 122px;
+    font-weight: bold;
+}
+.menu__item {
+    display: inline-block;
+    
+}
+.menu__item +.menu__item {
+    padding-left: 50px;
+}
+.menu__link {
+    font-weight: bold;
+}
+.header__box {
+    display: flex;
+}
+.header__address {
+    margin-right: 86px;
+    width: 265px;
+    padding-left: 30px;
+    position: relative;
+}
+.header__address::before {
+    content: "";
+    position: absolute;
+    background: url("../img/marker.svg");
+    width: 30px;
+    height: 30px;
+    top: -10px;
+    left: 0;
+}
+.user__list {
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+}
+.user__item {
+    padding-right: 10px;
+}
+.basket {
+    position: relative;
+}
+.basket__total {
+    position: absolute;
+    font-weight: 500;
+    font-size: 10px;
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+    color: #fff;
+    text-align: center;
+    background-color: #1C62CD;
+    bottom: 0px;
+    right: -14px;
+    border-radius: 50%;
+}
+.menu-categories {
+    background-color: #F0F0F4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 53px;
+}
+
+.menu-categories__link {
+    position: relative;
+    padding: 15px 5px;
+    display: inline-block;
+    
+}
+
+.menu-categories__link::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    left: auto;
+    right: 0;
+    bottom: 0;
+    height: 3px;
+    background-color: #1C62CD;
+    transition: .25s;
+}
+.menu-categories__link:hover::before {
+    width: 100%;
+    left: 0;
+    right: auto;
+}
